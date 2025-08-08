@@ -5,7 +5,7 @@ from datetime import datetime
 import numpy as np
 
 # === Настройки ===
-INTERVAL = "1m"
+INTERVAL = "3m"
 LIMIT = 200
 SLEEP_TIME = 60  # 1 минута
 BINANCE_FUTURES_ENDPOINT = "https://fapi.binance.com"
