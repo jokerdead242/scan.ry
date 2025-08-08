@@ -162,7 +162,7 @@ def run_scanner():
             else:
                 print(f"{symbol}: neutral")
 
-        print(f"\nЖдем {SLEEP_TIME // 60} минут...\n")
+        print(f"\nЖдем блять  {SLEEP_TIME // 60} минут...\n")
         time.sleep(SLEEP_TIME)
 
 # Запуск
