@@ -132,10 +132,10 @@ def get_signal(symbol, df):
 # Проверяем условия
     if all(sig == 1 for sig in indicators):
         last_signal[symbol] = "long"
-        signal_timer[symbol] = 3
+        signal_timer[symbol] = 5
     elif all(sig == -1 for sig in indicators):
         last_signal[symbol] = "short"
-        signal_timer[symbol] = 3
+        signal_timer[symbol] = 5
     else:
         if signal_timer.get(symbol, 0) > 0:
             signal_timer[symbol] -= 1
