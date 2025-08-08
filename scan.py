@@ -5,7 +5,7 @@ from datetime import datetime
 import numpy as np
 
 # === Настройки ===
-INTERVAL = "3m"
+INTERVAL = "1m"
 LIMIT = 200
 SLEEP_TIME = 180  # 3 минуты
 BINANCE_FUTURES_ENDPOINT = "https://fapi.binance.com"
@@ -162,7 +162,7 @@ def run_scanner():
             else:
                 print(f"{symbol}: neutral")
 
-        print(f"\nЖдем блять  {SLEEP_TIME // 60} минут...\n")
+        print(f"\nЖдем блять  {SLEEP_TIME // 20} минут...\n")
         time.sleep(SLEEP_TIME)
 
 # Запуск
