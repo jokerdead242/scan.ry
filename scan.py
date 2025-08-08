@@ -7,7 +7,7 @@ import numpy as np
 # === Настройки ===
 INTERVAL = "3m"
 LIMIT = 200
-SLEEP_TIME = 60  # 1 минута
+SLEEP_TIME = 180  # 3 минута
 BINANCE_FUTURES_ENDPOINT = "https://fapi.binance.com"
 
 # Цвета ANSI
