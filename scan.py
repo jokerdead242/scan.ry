@@ -5,7 +5,7 @@ from datetime import datetime
 import numpy as np
 
 # === Настройки ===
-INTERVAL = "3m"
+INTERVAL = "30m"
 LIMIT = 200
 SLEEP_TIME = 180  # 3 минута
 BINANCE_FUTURES_ENDPOINT = "https://fapi.binance.com"
@@ -132,10 +132,10 @@ def get_signal(symbol, df):
 # Проверяем условия
     if all(sig == 1 for sig in indicators):
         last_signal[symbol] = "long"
-        signal_timer[symbol] = 5
+        signal_timer[symbol] = 3
     elif all(sig == -1 for sig in indicators):
         last_signal[symbol] = "short"
-        signal_timer[symbol] = 5
+        signal_timer[symbol] = 3
     else:
         if signal_timer.get(symbol, 0) > 0:
             signal_timer[symbol] -= 1
